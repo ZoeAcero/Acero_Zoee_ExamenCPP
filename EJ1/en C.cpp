@@ -53,6 +53,13 @@ void mostrarAsistencias(const struct EstudianteConAsistencia* estudianteConAsist
     }
 }
 
+int main() {
+
+    struct EstudianteConAsistencia estudianteAsistencia;
+
+    
+}
+
 
 
 
