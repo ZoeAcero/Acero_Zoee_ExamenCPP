@@ -13,7 +13,7 @@ struct estudiante{
 
 //funcion para imprimir los datos de un estudiante
 
-void mostrarEstudiante(const Estudiante& estudiante) {
+void mostrarEstudiante(const estudiante& estudiante) {
     std::cout << "Nombre: " << estudiante.nombre << std::endl;
     std::cout << "Edad: " << estudiante.edad << std::endl;
     std::cout << "Promedio: " << estudiante.promedio << std::endl;
@@ -95,6 +95,7 @@ int main() {
     std::cout << "\nRegistro de Asistencia:" << std::endl;
     estudianteAsistencia.mostrarAsistencias();
 
+    return 0;
 
 }
 
