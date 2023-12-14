@@ -57,7 +57,9 @@ int main() {
 
     struct EstudianteConAsistencia estudianteAsistencia;
 
-    
+    strcpy(estudianteAsistencia.estudiante.nombre, "Zoe");
+    estudianteAsistencia.estudiante.edad = 18;
+    estudianteAsistencia.estudiante.promedio = 7.0;
 }
 
 
