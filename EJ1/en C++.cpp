@@ -86,6 +86,11 @@ int main() {
         std::cerr << e.what() << std::endl;
     }
 
+    estudianteAsistencia.registrarAsistencia(asistencia1);
+    estudianteAsistencia.registrarAsistencia(asistencia2);
+
+    
+
 }
 
 
