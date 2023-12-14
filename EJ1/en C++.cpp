@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstring>
 #include <string>
+#include <stdexcept>
 
 //estructura estudiante
 struct estudiante{
@@ -81,7 +82,10 @@ int main() {
     try {
         // Intentar registrar asistencia con formato de fecha incorrecto
         asistencia asistencia3 = {"15-01-2023", "Física", "Tardanza"};
-        throw ExcepcionFormatoFecha();
+        if (asistencia3.fecha.find("-") == std::string::npos) {
+            throw Excepcion();
+        }
+
     } catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
     }
