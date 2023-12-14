@@ -92,6 +92,10 @@ int main() {
     std::cout << "Información del Estudiante:" << std::endl;
     mostrarEstudiante(estudianteAsistencia.estudiante);
 
+    std::cout << "\nRegistro de Asistencia:" << std::endl;
+    estudianteAsistencia.mostrarAsistencias();
+
+
 }
 
 
