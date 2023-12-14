@@ -65,6 +65,12 @@ int main() {
     estudianteAsistencia.estudiante.materias = (char**)malloc(estudianteAsistencia.estudiante.numMaterias * sizeof(char*));
     estudianteAsistencia.estudiante.materias[0] = "Matemáticas";
     estudianteAsistencia.estudiante.materias[1] = "Programación";
+
+    struct Asistencia asistencia1 = {"2023-01-15", "Matemáticas", "Asistió"};
+    struct Asistencia asistencia2 = {"2023-01-16", "Programación", "Falta"};
+
+    
+
 }
 
 
