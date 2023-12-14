@@ -62,6 +62,8 @@ public:
     }
 };
 
+void ExcepcionFormatoFecha();
+
 int main() {
 
     EstudianteConAsistencia estudianteAsistencia;
@@ -76,4 +78,16 @@ int main() {
     asistencia asistencia1 = {"2023-13-12", "Matemáticas", "Asistió"};
     asistencia asistencia2 = {"2023-7-1", "Programación", "Falta"};
 
+    try {
+        // Intentar registrar asistencia con formato de fecha incorrecto
+        asistencia asistencia3 = {"15-01-2023", "Física", "Tardanza"};
+        throw ExcepcionFormatoFecha();
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+    }
+
 }
+
+
+
+
