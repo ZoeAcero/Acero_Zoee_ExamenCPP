@@ -32,3 +32,10 @@ struct asistencia{
     std::string materia;
     std::string estado;
 };
+
+//clase estudiante con gestion de asistencia
+
+class EstudianteConAsistencia {
+public:
+    estudiante estudiante;
+    std::vector<asistencia> asistencias;
