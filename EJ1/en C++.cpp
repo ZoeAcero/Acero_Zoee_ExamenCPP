@@ -52,3 +52,12 @@ public:
         }
     }
 };
+
+//excepcion personalizada para mensajes de error
+
+class Excepcion : public std::exception {
+public:
+    const char* what() const noexcept override {
+        return "Error en el formato de la fecha: ";
+    }
+};
