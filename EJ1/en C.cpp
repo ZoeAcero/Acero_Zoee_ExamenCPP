@@ -81,8 +81,13 @@ int main() {
     for (int i = 0; i < estudianteAsistencia.estudiante.numMaterias; ++i) {
         free(estudianteAsistencia.estudiante.materias[i]);
     }
+    free(estudianteAsistencia.estudiante.materias);
+    free(estudianteAsistencia.asistencias);
 
+    return 0;
 }
+
+
 
 
 
