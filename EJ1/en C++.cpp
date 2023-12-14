@@ -89,7 +89,8 @@ int main() {
     estudianteAsistencia.registrarAsistencia(asistencia1);
     estudianteAsistencia.registrarAsistencia(asistencia2);
 
-    
+    std::cout << "Información del Estudiante:" << std::endl;
+    mostrarEstudiante(estudianteAsistencia.estudiante);
 
 }
 
