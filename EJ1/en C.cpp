@@ -69,6 +69,9 @@ int main() {
     struct Asistencia asistencia1 = {"2023-01-15", "Matemáticas", "Asistió"};
     struct Asistencia asistencia2 = {"2023-01-16", "Programación", "Falta"};
 
+    registrarAsistencia(&estudianteAsistencia, &asistencia1);
+    registrarAsistencia(&estudianteAsistencia, &asistencia2);
+
     
 
 }
