@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <cstring>
 #include <string>
-#include <stdexcept>
 
 //estructura estudiante
 struct estudiante{
