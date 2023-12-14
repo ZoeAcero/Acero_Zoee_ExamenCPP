@@ -44,4 +44,11 @@ public:
     void registrarAsistencia(const asistencia& asistencia) {
         asistencias.push_back(asistencia);
     }
-    
+
+    void mostrarAsistencias() const {
+        for (const auto& asistencia : asistencias) {
+            std::cout << "Fecha: " << asistencia.fecha << " | Materia: " << asistencia.materia
+                      << " | Estado: " << asistencia.estado << std::endl;
+        }
+    }
+};
