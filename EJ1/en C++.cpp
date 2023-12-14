@@ -39,3 +39,9 @@ class EstudianteConAsistencia {
 public:
     estudiante estudiante;
     std::vector<asistencia> asistencias;
+
+    //registrar y mostrar asistencia
+    void registrarAsistencia(const asistencia& asistencia) {
+        asistencias.push_back(asistencia);
+    }
+    
