@@ -60,6 +60,11 @@ int main() {
     strcpy(estudianteAsistencia.estudiante.nombre, "Zoe");
     estudianteAsistencia.estudiante.edad = 18;
     estudianteAsistencia.estudiante.promedio = 7.0;
+
+    estudianteAsistencia.estudiante.numMaterias = 2;
+    estudianteAsistencia.estudiante.materias = (char**)malloc(estudianteAsistencia.estudiante.numMaterias * sizeof(char*));
+    estudianteAsistencia.estudiante.materias[0] = "Matemáticas";
+    estudianteAsistencia.estudiante.materias[1] = "Programación";
 }
 
 
