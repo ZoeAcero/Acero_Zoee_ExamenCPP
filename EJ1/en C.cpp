@@ -72,7 +72,8 @@ int main() {
     registrarAsistencia(&estudianteAsistencia, &asistencia1);
     registrarAsistencia(&estudianteAsistencia, &asistencia2);
 
-    
+    printf("Información del Estudiante:\n");
+    mostrarEstudiante(&estudianteAsistencia.estudiante);
 
 }
 
