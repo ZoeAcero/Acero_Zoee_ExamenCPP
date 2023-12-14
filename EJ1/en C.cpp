@@ -11,3 +11,9 @@ struct Estudiante {
     int numMaterias;
 };
 
+//Funcion para imprimir los datos de un estudiante
+void mostrarEstudiante(const struct Estudiante* estudiante) {
+    printf("Nombre: %s\n", estudiante->nombre);
+    printf("Edad: %d\n", estudiante->edad);
+    printf("Promedio: %.2f\n", estudiante->promedio);
+
