@@ -39,4 +39,12 @@ struct EstudianteConAsistencia {
     int numAsistencias;
 };
 
+//Registrar y mostrar asistencia
+void registrarAsistencia(struct EstudianteConAsistencia* estudianteConAsistencia, const struct Asistencia* asistencia) {
+    estudianteConAsistencia->asistencias[estudianteConAsistencia->numAsistencias] = *asistencia;
+        estudianteConAsistencia->numAsistencias++;
+}
+
+
+
 
