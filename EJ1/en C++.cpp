@@ -61,3 +61,10 @@ public:
         return "Error en el formato de la fecha: ";
     }
 };
+
+int main() {
+
+    EstudianteConAsistencia estudianteAsistencia;
+
+    //datos del estudiante
+}
