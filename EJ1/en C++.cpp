@@ -73,4 +73,7 @@ int main() {
     estudianteAsistencia.estudiante.promedio = 7.0;
     estudianteAsistencia.estudiante.materias = {"Matemáticas", "Programación"};
 
+    asistencia asistencia1 = {"2023-13-12", "Matemáticas", "Asistió"};
+    asistencia asistencia2 = {"2023-7-1", "Programación", "Falta"};
+
 }
