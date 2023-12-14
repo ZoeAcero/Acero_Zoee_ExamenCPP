@@ -75,6 +75,13 @@ int main() {
     printf("Información del Estudiante:\n");
     mostrarEstudiante(&estudianteAsistencia.estudiante);
 
+    mostrarAsistencias(&estudianteAsistencia);
+
+    // Liberar memoria
+    for (int i = 0; i < estudianteAsistencia.estudiante.numMaterias; ++i) {
+        free(estudianteAsistencia.estudiante.materias[i]);
+    }
+
 }
 
 
